@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface USRViewController : UIViewController
+@interface USRViewController : UITableViewController
 
 @end

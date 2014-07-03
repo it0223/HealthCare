@@ -17,7 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+ // Do any additional setup after loading the view, typically from a nib.
+}
+
+  - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+} 
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    cell.textLabel.text = [NSString stringWithFormat:@"Sample"];
+    cell.detailTextLabel.text = @"detail";
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning
