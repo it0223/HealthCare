@@ -10,4 +10,7 @@
 
 @interface USRViewController : UITableViewController
 
+@property (nonatomic) NSString* responsString;
+@property (nonatomic) NSArray* healths;
+
 @end

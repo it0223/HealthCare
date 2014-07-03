@@ -17,6 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSURL *url = [NSURL URLWithString:@"http://192.168.1.6:9292/healths"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSOperationQueue *queue = [NSOperationQueue new];
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *res, NSData *data, NSError *error){
+//        NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+//        self.responsString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSError *parseError = nil;
+        self.healths = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
+        if (parseError) {
+            NSLog(@"Error: %@", parseError);
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
+    
  // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,10 +46,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [NSString stringWithFormat:@"Sample"];
+//    cell.textLabel.text = [NSString stringWithFormat:responsString];
+    NSDictionary *dictionary = (NSDictionary*)self.healths[0];
+    cell.textLabel.text = [NSString stringWithFormat:@"string %li %@", indexPath.row, dictionary[@"weight"]];
     cell.detailTextLabel.text = @"detail";
     return cell;
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
