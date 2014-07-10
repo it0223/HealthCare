@@ -21,6 +21,7 @@
 		AE967A4C196538E500B34DBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE967A2E196538E400B34DBF /* UIKit.framework */; };
 		AE967A54196538E500B34DBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE967A52196538E500B34DBF /* InfoPlist.strings */; };
 		AE967A56196538E500B34DBF /* HealthCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE967A55196538E500B34DBF /* HealthCareTests.m */; };
+		AE969815196E770400C4CD55 /* USRNewHealthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		AE967A51196538E500B34DBF /* HealthCareTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HealthCareTests-Info.plist"; sourceTree = "<group>"; };
 		AE967A53196538E500B34DBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE967A55196538E500B34DBF /* HealthCareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthCareTests.m; sourceTree = "<group>"; };
+		AE969813196E770400C4CD55 /* USRNewHealthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USRNewHealthTableViewController.h; sourceTree = "<group>"; };
+		AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USRNewHealthTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				AE967A39196538E400B34DBF /* USRAppDelegate.h */,
 				AE967A3A196538E400B34DBF /* USRAppDelegate.m */,
 				AE967A3C196538E400B34DBF /* Main.storyboard */,
+				AE969813196E770400C4CD55 /* USRNewHealthTableViewController.h */,
+				AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */,
 				AE967A3F196538E400B34DBF /* USRViewController.h */,
 				AE967A40196538E400B34DBF /* USRViewController.m */,
 				AE967A42196538E400B34DBF /* Images.xcassets */,
@@ -253,6 +258,7 @@
 				AE967A37196538E400B34DBF /* main.m in Sources */,
 				AE967A3B196538E400B34DBF /* USRAppDelegate.m in Sources */,
 				AE967A41196538E400B34DBF /* USRViewController.m in Sources */,
+				AE969815196E770400C4CD55 /* USRNewHealthTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +463,7 @@
 				AE967A5B196538E500B34DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE967A5C196538E500B34DBF /* Build configuration list for PBXNativeTarget "HealthCareTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				AE967A5E196538E500B34DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,11 +27,80 @@
                             <outlet property="delegate" destination="bIR-mK-Ksc" id="MBA-zw-VU3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Health Care" id="3rG-6W-Ctp"/>
+                    <navigationItem key="navigationItem" title="Health Care" id="3rG-6W-Ctp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lTf-xR-mZb">
+                            <connections>
+                                <segue destination="xD4-7M-BAb" kind="modal" id="nhy-QW-XAl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adV-EJ-Yf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510" y="1"/>
+        </scene>
+        <!--New Health Table View Controller - New Health-->
+        <scene sceneID="CPs-BI-Lc3">
+            <objects>
+                <tableViewController id="vN8-DC-oEK" customClass="USRNewHealthTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ptb-xQ-YsK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="tQP-F4-JIw">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="W6m-vJ-maB">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W6m-vJ-maB" id="JDR-dc-fQ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-en-fUx">
+                                                    <rect key="frame" x="44" y="7" width="216" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="vN8-DC-oEK" id="NNr-GA-iOH"/>
+                            <outlet property="delegate" destination="vN8-DC-oEK" id="XBP-RO-7Ng"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="New Health" id="VL6-pD-g6U">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4g0-cN-SPa">
+                            <connections>
+                                <action selector="didTapCancelButton:" destination="vN8-DC-oEK" id="yqr-oS-URe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mJr-YY-1Iv"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTd-mn-htA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1367" y="1"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8KG-uu-9Id">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="xD4-7M-BAb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0BL-Nh-dtm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vN8-DC-oEK" kind="relationship" relationship="rootViewController" id="CNB-Cr-cLH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ecw-wH-OPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MWO-ZF-Qbp">
