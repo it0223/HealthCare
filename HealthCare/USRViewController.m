@@ -17,6 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
+ // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     NSURL *url = [NSURL URLWithString:@"http://192.168.1.6:9292/healths"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSOperationQueue *queue = [NSOperationQueue new];
@@ -33,7 +41,6 @@
         });
     }];
     
- // Do any additional setup after loading the view, typically from a nib.
 }
 
   - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
