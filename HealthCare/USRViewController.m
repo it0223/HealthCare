@@ -57,6 +57,9 @@
     NSDictionary *dictionary = (NSDictionary*)self.healths[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"string %li %@", indexPath.row, dictionary[@"weight"]];
     cell.detailTextLabel.text = @"detail";
+    
+    // USRHealth *health = self.healths[indexPath.row];
+    // cell.textLabel.text = [NSString stringWithFormat:@"string %li %@", indexPath.row, health.weight];
     return cell;
 }
 

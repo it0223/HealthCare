@@ -22,6 +22,7 @@
 		AE967A54196538E500B34DBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE967A52196538E500B34DBF /* InfoPlist.strings */; };
 		AE967A56196538E500B34DBF /* HealthCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE967A55196538E500B34DBF /* HealthCareTests.m */; };
 		AE969815196E770400C4CD55 /* USRNewHealthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */; };
+		AE969818196E99F900C4CD55 /* USRHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = AE969817196E99F900C4CD55 /* USRHealth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		AE967A55196538E500B34DBF /* HealthCareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthCareTests.m; sourceTree = "<group>"; };
 		AE969813196E770400C4CD55 /* USRNewHealthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USRNewHealthTableViewController.h; sourceTree = "<group>"; };
 		AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USRNewHealthTableViewController.m; sourceTree = "<group>"; };
+		AE969816196E99F900C4CD55 /* USRHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USRHealth.h; sourceTree = "<group>"; };
+		AE969817196E99F900C4CD55 /* USRHealth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USRHealth.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				AE967A39196538E400B34DBF /* USRAppDelegate.h */,
 				AE967A3A196538E400B34DBF /* USRAppDelegate.m */,
 				AE967A3C196538E400B34DBF /* Main.storyboard */,
+				AE969816196E99F900C4CD55 /* USRHealth.h */,
+				AE969817196E99F900C4CD55 /* USRHealth.m */,
 				AE969813196E770400C4CD55 /* USRNewHealthTableViewController.h */,
 				AE969814196E770400C4CD55 /* USRNewHealthTableViewController.m */,
 				AE967A3F196538E400B34DBF /* USRViewController.h */,
@@ -258,6 +263,7 @@
 				AE967A37196538E400B34DBF /* main.m in Sources */,
 				AE967A3B196538E400B34DBF /* USRAppDelegate.m in Sources */,
 				AE967A41196538E400B34DBF /* USRViewController.m in Sources */,
+				AE969818196E99F900C4CD55 /* USRHealth.m in Sources */,
 				AE969815196E770400C4CD55 /* USRNewHealthTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
