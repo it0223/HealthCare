@@ -57,11 +57,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-en-fUx">
-                                                    <rect key="frame" x="44" y="7" width="216" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-en-fUx">
+                                                    <rect key="frame" x="15" y="7" width="290" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -80,8 +80,15 @@
                                 <action selector="didTapCancelButton:" destination="vN8-DC-oEK" id="yqr-oS-URe"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mJr-YY-1Iv"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mJr-YY-1Iv">
+                            <connections>
+                                <action selector="didTapSaveButton:" destination="vN8-DC-oEK" id="rQj-0H-EsV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="weightTextField" destination="VEx-en-fUx" id="L1f-sA-IZV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTd-mn-htA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

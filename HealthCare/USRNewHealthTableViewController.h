@@ -11,5 +11,8 @@
 @interface USRNewHealthTableViewController : UITableViewController
 
 - (IBAction)didTapCancelButton:(id)sender;
+- (IBAction)didTapSaveButton:(id)sender;
+
+@property (nonatomic,weak) IBOutlet UITextField* weightTextField;
 
 @end

@@ -38,7 +38,7 @@
 
   - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.healths.count;
 } 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,7 +47,7 @@
     
     // Configure the cell...
 //    cell.textLabel.text = [NSString stringWithFormat:responsString];
-    NSDictionary *dictionary = (NSDictionary*)self.healths[0];
+    NSDictionary *dictionary = (NSDictionary*)self.healths[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"string %li %@", indexPath.row, dictionary[@"weight"]];
     cell.detailTextLabel.text = @"detail";
     return cell;
